@@ -1,0 +1,145 @@
+.navbar{
+width:100%;
+height:80px;
+margin-left:55%;
+margin-top:0px;
+margin-right:-8px;
+background-color:black;
+overflow: hidden;
+position:fixed;
+top:0;
+z-index:2;
+}
+.navbar a {
+  float:left;
+  display: block;
+  font-weight: bold;  
+  position: relative; 
+  color:white;
+  padding:35px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover
+{
+position:relative;
+animation-name:example;
+animation-duration:60s;
+}
+@keyframes example
+{
+0%{color:gold;bottom:9px;}
+}
+.logo
+{
+position:absolute;
+height:80px;
+width:100px;
+margin-left:0px;
+margin-top:0px;
+border-radius:50%;
+}
+.log
+{
+height:80px;
+width:58%;
+background-color:black;
+margin-top:0px;
+overflow:hidden;
+position:fixed;
+top:0;
+left:0;
+z-index:2;
+}
+.menuphoto
+{
+	position:absolute;
+	right:0;
+	left:0;
+	top:70;
+	height:500px;
+	background-image:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url('https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content9442.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+.text
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+}
+hr{
+	color:red;
+	background-color:red;
+}
+.menuitem{
+	top:562px;
+	right:0;
+	left:0;
+	width:100%;
+	position:absolute;
+	background-color:white;
+}
+table{
+	margin-top:50px;
+	padding-bottom:70px;
+}
+table,tr,td,th{
+	
+	font-size:30px;
+	border-spacing: 10px;
+	
+}
+td{
+	width:30%;
+	font-family: 'Thasadith', sans-serif;
+}
+th,td{
+	
+	padding:18px;
+}
+.lunch{
+	position:absolute;
+	left:0;
+	right:0;
+	top:2350;
+	height:400px;
+	background-image:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url('https://images4.alphacoders.com/988/thumb-1920-988128.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.lunchitems{
+	position:absolute;
+	left:0;
+	right:0;
+	top:2750;
+	height:1050px;
+
+}
+.lunchtext
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+}
+.lunchitems img{
+	height:150px; 
+	width:200px;
+	border-radius:20% 20% 25% 25%;
+	float:left;
+	padding-right:20px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#litems td{
+	
+	padding:30px;
+}
+#litems tr:nth-child(odd) {background-color: #f2f2f2;}
+#litems tr:nth-child(even) {background-color:white;}
