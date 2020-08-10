@@ -143,6 +143,47 @@ th,td{
 }
 #litems tr:nth-child(odd) {background-color: #f2f2f2;}
 #litems tr:nth-child(even) {background-color:white;}
+.dinner
+{
+	position:absolute;
+	left:0;
+	right:0;
+	height:400px;
+	background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('https://media2.s-nbcnews.com/i/newscms/2020_05/1532568/today-food-chloe-cocarelli-today-main-200127-v3_ce4d06e5775cf2d875c690223a2adaf2.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	top:3800;
+}
+.dinnertext
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+}
+.dinneritems{
+	position:absolute;
+	left:0;
+	right:0;
+	top:4200;
+	height:1050px;
+}
+.dinneritems img{
+	height:150px; 
+	width:200px;
+	border-radius:20% 20% 25% 25%;
+	float:left;
+	padding-right:20px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#ditems td
+{
+padding:30px;
+}
+#ditems tr:nth-child(odd) {background-color: #f2f2f2;}
+#ditems tr:nth-child(even) {background-color:white;}
 .contactus{
 	background-color:#262626;
 	position:absolute;
@@ -185,3 +226,4 @@ th,td{
     width: 100%;
   }
 }
+
