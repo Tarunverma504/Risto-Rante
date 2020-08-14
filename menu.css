@@ -285,5 +285,5 @@ padding:30px;
 .gallery>a>img:hover{
 	display:overlay;
 	transition: .4s ease;
-  opacity: 0.2;
+  opacity: 0.4;
 }
