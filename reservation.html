@@ -1,111 +1,162 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<meta charse="UTF-8">
+	<meta charse="UTF-8">
 	<meta name="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="C:\Users\omver\OneDrive\Desktop\Our Site\main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Thasadith:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reservation.css">
+	<link rel="stylesheet" type="text/css" href="reservation.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-	<title>Our site</title>
-<style>
-.form{
-margin-left:30%;
-}
-body{
-    background-image:url('https://plazaart-ecomitizellc.netdna-ssl.com/media/catalog/product/cache/1/image/460x460/9df78eab33525d08d6e5fb8d27136e95/175579.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-    width:100%;
-    height:150%;
-	position:absolute;
-}
-</style>
+	<title>Reservation</title>
 </head>
 <body>
-<div class="log">
-	<img class="logo"src="C:\Users\omver\OneDrive\Desktop\Our Site\logo.png">
+	<div class="log">
+	<img class="logo"src="https://us.123rf.com/450wm/desbayy/desbayy1808/desbayy180801203/107106280-stock-vector-cs-initial-letter-gold-color-logo-icon-vector.jpg?ver=6">
 </div>
 	<div class="navbar">	
 
-	        <a href="#"> Home</a>
-			<a href="#"> Menu</a>
-			<a href="#"> Reservation</a>
-			<a href="#"> Special-Dishes</a>
+	        <a href="index.html"> Home</a>
+			<a href="menu.html"> Menu</a>
+			<a href="reservation.html"> Reservation</a>
+			<a href="gallery.html"> Gallery</a>
 			<a href="#"> Blog</a>
 			<a href="#"> About us</a>
 </div>
-<div style="padding-bottom: 18px;font-size : 24px;text-align:center; color:red;"><em><b>Reservation</b></em></div>
-<div style="padding-bottom: 18px;font-size : 30px; color:black; text-align:center"><b>Table Booking</b></div>
+    <div class="upper">
+	<div class="text">
+		<h1 style="border:5px solid gold;font-size:50px;color:#ffff;padding-left:15px;padding-right: 15px;padding-top: 10px;padding-bottom: 10px;">RESERVATION</h1>
+	</div>
+</div>
 <br><br>
-<form method="post" action="//submit.form" onSubmit="return validateForm();">
-<div style="max-width: 400px;">
-</div>
-<div class="form">
-<div style="padding-bottom: 18px;">Name<span style="color: red;"></span><br/>
-<input type="text" id="data_3" name="data_3" style="max-width : 400px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Phone<br/>
-<input type="text" id="data_4" name="data_4" style="max-width : 400px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Email<br/>
-<input type="text" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Date<span style="color: red;"></span><br/>
-<input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
-</div>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>-->
-<div style="padding-bottom: 18px;">Time<span style="color: red;"></span><br/>
-<input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Number of People<span style="color: red;"></span><br/>
-<select id="data_8" name="data_8" style="max-width : 250px;" class="form-control"><option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>6</option>
+<div class="reseform">
+	<hr color="red" style="height:3px">
+<div style="padding-bottom: 30px;font-size : 40px; color:black; text-align:center;"><b>Make a Reservation</b></div>
+<form >
+
+
+<table id="uptab"> 
+	<tr> 
+		<td><input type="date" id="date" placeholder="Date" name="date" value="DATE"></input></td>
+		<td><input type="time" id="time" placeholder="Time" name="time"/></td>
+		<td>
+		<select id="partysize" name="partysize" class="form-control"><option>Party Size</option>
+<option>1 person</option>
+<option>2 person</option>
+<option>3 person</option>
+<option>4 person</option>
+<option>5 person</option>
+<option>6 person</option>
 <option>6+ (Specify in Comments)</option>
 </select>
+</td>
+	</tr>
+</table>
+<table id="downtab">
+<tr> 
+<td><input type="text" id="name" name="name"  onblur="check1()" placeholder="        Name"/></td>
+<td><input type="email" id="email" name="Email" onblur="check2()" placeholder="      xxx@gmail.com"/></td>
+</tr>
+<tr> 
+<td><input type="tel" id="phoneno" name="phoneno" onblur="check3()" placeholder="      +91-xxxxxxxxxx"/></td>
+<td><input type="text" id="address" name="address" onblur="check4()" placeholder="      Address"/></td>
+</tr>
+<tr>
+ <td colspan="2"><textarea style="background-color:#d3d3d3;border-radius:15px;border:none;margin-left:60px"rows="7" cols="80">Type Your message here...</textarea></td>
+</tr>
+<tr>
+ <td colspan="2" style="padding-left:200px;width:370px;">
+ 	<button onclick="myFunction()">Book Table</button></td>
+</tr>
+</table> 
 </div>
-<div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
-<textarea id="data_9" false name="data_9" style="max-width : 400px;" rows="6" class="form-control"></textarea>
-</div>
-<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Book Table" type="submit"/></div>
 </div>
 </form>
+<script>
+	var a=false;
+	var b=false;
+	var c=false;
+	var d=false;
+	        function myFunction() {
+	        	if(a==true && b==true && c==true && d==true){
+	        		alert("Your Reservation is confirmed please check your Email Thank You!");
+	        	}
+	        	else{
+	        		alert("Plesae fill the vaild details!! ")
+	        	}
+	        }
+		function check1()
+		{
+			var field=document.getElementById("name").value;
+			field=field.trim();
+			var len=field.length;
+			if(len>0)
+			{
+				document.getElementById("name").style.backgroundColor="green";
+				document.getElementById("name").style.color="white";
+				a=true;
+			}
+			else
+			{
+				alert("please enter valid name!");
+				a=false;
+			}
+		}
+		function check2()
+		{
+			var field=document.getElementById("email").value;
+			var cat=/\w+\@\w+\.\w{2,10}/;
+			if(cat.test(field))
+			{
+				document.getElementById("email").style.backgroundColor="green";
+				document.getElementById("email").style.color="white";
+				b=true;
+			}
+			else
+			{
+				document.getElementById("email").style.backgroundColor="red";
+				document.getElementById("email").style.color="white";
+				b=false;
+			}
+		}
+		function check3()
+		{
+			var field=document.getElementById("phoneno").value;
+			var cat=/\d{10}/;
+			if(cat.test(field))
+			{
+				document.getElementById("phoneno").style.backgroundColor="green";
+				document.getElementById("phoneno").style.color="white";
+				c=true;
+			}
+			else
+			{
+				document.getElementById("phoneno").style.backgroundColor="red";
+				document.getElementById("phoneno").style.color="white";
+				c=false;
+			}
 
-
-<!--<script type="text/javascript">
-function validateForm() {
-if (isEmpty(document.getElementById('data_3').value.trim())) {
-alert('Name is required!');
-return false;
+		}
+		function check4()
+		{
+			var field=document.getElementById("address").value;
+			field=field.trim();
+			var len=field.length;
+			if(len>0)
+			{
+				document.getElementById("address").style.backgroundColor="green";
+				document.getElementById("address").style.color="white";
+				d=true;
+			}
+			else
+			{
+				alert("please enter valid Address!");
+				d=false;
+			}	
 }
-if (!validateEmail(document.getElementById('data_5').value.trim())) {
-alert('Email must be a valid email address!');
-return false;
-}
-if (isEmpty(document.getElementById('data_6').value.trim())) {
-alert('Date is required!');
-return false;
-}
-if (isEmpty(document.getElementById('data_7').value.trim())) {
-alert('Time is required!');
-return false;
-}
-return true;
-}
-function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-function validateEmail(email) {
-var re = /^([\w-]+(?:\.[\w-]+))@((?:[\w-]+\.)\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-return isEmpty(email) || re.test(email);
-}
-</script>-->
+		
+	</script>
 </body>
 </html>
