@@ -1,7 +1,7 @@
 .navbar{
 width:100%;
 height:80px;
-margin-left:55%;
+margin-left:65%;
 margin-top:0px;
 margin-right:-8px;
 background-color:black;
@@ -43,7 +43,7 @@ border-radius:50%;
 .log
 {
 height:80px;
-width:58%;
+width:68%;
 background-color:black;
 margin-top:0px;
 overflow:hidden;
@@ -132,4 +132,96 @@ button{
 }
 button:hover{
 	background-color:green;
+}
+.contactus{
+	background-color:#262626;
+	position:absolute;
+	top:1150;
+	left:0;
+	right:0;
+	height:520;
+}
+.contactus>table{
+	margin-top:68px;
+	width:35%;
+	color:white;
+	border-collapse:collapse;
+
+}
+.contactus table th{
+	font-size:20px;
+	padding-bottom:20px;
+
+}
+.contactus table td{
+	color:grey;
+	font-size:23px;
+	padding-left:50px;
+	padding-top:15px;
+	padding-bottom:17px;
+	font-family: 'Thasadith', sans-serif;
+}
+.container{
+	height:345px;
+	width: 500px;
+	position:absolute;
+	top:1180;
+	left:560;
+	z-index:2;
+}
+.container>h2{
+	text-align: center;
+	color:white;	
+}
+.gallery{
+	padding:15px;
+	margin:0px;
+	float:left;
+	width:120px;
+}
+.gallery>a>img{
+	width:100%; 
+	height:30%;
+}
+#follow{
+	position:absolute;
+	left:650;
+	top:0px;
+	width:60%;
+}
+#follow>h1{
+
+	color:white;
+	font-size:40px;
+}
+#follow>h2{
+	color:white;
+	margin-right:40px;
+	font-size:30px;
+	margin-left:70px;
+	border-bottom:2px solid red;
+	padding-left:20px;
+}
+#follow>p{
+	color:grey;
+	margin-left:120px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+ 
+  
+}
+
+.gallery>a>img:hover{
+	display:overlay;
+	transition: .4s ease;
+  opacity: 0.4;
+}#res:hover{
+	color:red;
 }
